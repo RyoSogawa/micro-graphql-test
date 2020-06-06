@@ -1,5 +1,5 @@
 {
-  "name": "yorisoi-test",
+  "name": "micro-graphql-test",
   "version": "1.0.0",
   "main": "index.js",
   "author": "sogawa",
@@ -15,7 +15,7 @@
     "sql:undoall": "sequelize db:migrate:undo:all"
   },
   "dependencies": {
-    "apollo-server-micro": "^2.14.1",
+    "apollo-server-micro": "^2.14.2",
     "dotenv": "^8.2.0",
     "graphql": "^15.0.0",
     "mariadb": "^2.4.0",
