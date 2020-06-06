@@ -3,20 +3,20 @@ const {resolvers} = require('./resolvers')
 
 const typeDefs = gql`
     type User{
-        id: Int
+        id: Int!
         name: String
         birth: String
         countryCode: Int
         email: String
-        prefectureCode: Int
+        prefectureCode: Int!
         createdAt: String
         updatedAt: String
     }
 
     type Query {
-        sayHello(name: String): String
+        sayHello(name: String): String!
         getUsers: [User]
-        getUser(id: Int): User
+        getUser(id: Int!): User
     }
 
     type Mutation{
@@ -30,8 +30,8 @@ const typeDefs = gql`
             birth: String
             countryCode: Int
             email: String
-            prefectureCode: Int):Boolean
-        deleteUser(id:Int!):Boolean
+            prefectureCode: Int):Boolean!
+        deleteUser(id:Int!):Boolean!
     }
 `
 
